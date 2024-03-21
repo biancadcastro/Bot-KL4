@@ -1,0 +1,14 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Bot de moderação da KL4",
+  "main": "src/index.js",
+  "repository": "https://github.com/biancadcastro/Bot-KL4.git",
+  "author": {
+    "name":"Bianca de Castro",
+    "email": "biancadcastro@gmail.com",
+    "github": "biancadcastro"
+  },
+  "license": "GPL-3.0",
+  "private": false
+}
