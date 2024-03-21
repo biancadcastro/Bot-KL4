@@ -3,7 +3,7 @@ const axios = require("axios")
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('sendEmbed')
+		.setName('sendembed')
 		.setDescription('Envia a embed do comando')
 		.setDMPermission(false)
         .setDefaultMemberPermissions("ADMINISTRATOR"),
