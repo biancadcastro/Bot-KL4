@@ -10,7 +10,8 @@ const client = new Bot(
                 GatewayIntentBits.Guilds, 
                 GatewayIntentBits.MessageContent, 
                 GatewayIntentBits.GuildMessages,
-                GatewayIntentBits.DirectMessages
+                GatewayIntentBits.DirectMessages,
+                GatewayIntentBits.GuildMembers,
             ]
         }
     )
