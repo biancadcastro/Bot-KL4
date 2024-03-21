@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, RoleSelectMenuBuilder, StringSelectMenuBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, RoleSelectMenuBuilder, StringSelectMenuBuilder, PermissionsBitField } = require('discord.js');
 const axios = require("axios")
 
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
 		.setName('sendembed')
 		.setDescription('Envia a embed do comando')
 		.setDMPermission(false)
-        .setDefaultMemberPermissions("ADMINISTRATOR"),
+        .setDefaultMemberPermissions(PermissionsBitField.ADMINISTRATOR),
 
 	async execute(client, interaction) {
         const guild =  await client.guilds.fetch(interaction.guildId)
