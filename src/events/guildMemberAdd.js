@@ -1,4 +1,5 @@
 const { MessageEmbed, Permissions, EmbedBuilder } = require('discord.js');
+const logMemberJoin = require('../functions/logs/memberJoin')
 
 module.exports = {
 
@@ -13,6 +14,8 @@ module.exports = {
         const member = guild.members.cache.get(event.user.id)
 
         member.roles.add([`${process.env.GUILD_MEMBER_ROLE_ID}`])
+
+        logMemberJoin(event, client)
 
         return setTimeout(() => {
             welcomeMessage.delete().catch(() => null)
